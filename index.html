@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form class="container">
+        <div class="form-group">
+            <label for="soNguyen">Nhập số nguyên cần lưu vào mảng</label>
+            <input type="text" onfocus="this.value=''" class="form-control" id="soNguyen">
+            <p>Các số nguyên có trong mảng</p>
+            <p id="hienThiSN"></p>
+        </div>
+        <button type="button" class="btn btn-primary" id="btnLuu">Lưu số</button>
+        <button type="button" class="btn btn-primary" id="btnTinh">Tính</button>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai1">
+            <label class="form-check-label" for="bai1">1) Tổng số nguyên dương</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai2">
+            <label class="form-check-label" for="bai2">2) Đếm số nguyên dương trong mảng</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai3">
+            <label class="form-check-label" for="bai3">3) Tìm số nhỏ nhất trong mảng</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai4">
+            <label class="form-check-label" for="bai4">4) Tìm số dương nhỏ nhất trong mảng</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai5">
+            <label class="form-check-label" for="bai5">5) Tìm số chẵn cuối cùng trong mảng (Không có số chẵn trả về -1)</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai6">
+            <label class="form-check-label" for="bai6">6) Đổi chỗ 2 giá trị trong mảng</label>
+        </div>        
+        <div class="doiCho2So">
+            <label for="soNguyen">Nhập vị trí 1</label>
+            <input type="text" class="form-control" id="viTri1">
+            <label for="soNguyen">Nhập vị trí 2</label>
+            <input type="text" class="form-control" id="viTri2">
+            <p>Kết quả sau khi đổi chỗ</p>
+            <p id="kq"></p>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai7">
+            <label class="form-check-label" for="bai7">7) Sắp xếp theo thứ tăng dần trong mảng</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai8">
+            <label class="form-check-label" for="bai8">8) Tìm số nguyên tố đầu tiên trong mảng</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai9">
+            <label class="form-check-label" for="bai9">9) Nhập mảng số thực tìm bao nhiêu số nguyên trong mảng</label>
+        </div>
+        <div class="nhapMangMoi">
+            <label for="nhapSoThuc">Nhập số thực cần lưu vào mảng</label>
+            <input type="text" onfocus="this.value=''" class="form-control" id="nhapSoThuc">
+            <span>Lưu số thực trước rồi lưu vào mảng</span>
+            <p>Các số thực có trong mảng</p>
+            <p id="hienThiST"></p>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="bai10">
+            <label class="form-check-label" for="bai10">10) So sánh số dương và số âm trong mảng </label>
+        </div>
+        
+        <button type="button" onclick="demSoNguyen()" class="btn btn-primary" id="btnDemSoNguyen">Đếm số nguyên</button>
+        <button type="button" class="btn btn-primary" id="btnLuuSoThuc">Lưu số thực</button>
+
+    </form>
+        <script src="./main.js"></script>
+</body>
+
+</html>
